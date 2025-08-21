@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enhanced HTML5 Content & Form</title>
+</head>
+<body>
+
+  <header>
+    <h1>HTML5 Content & Form Mastery</h1>
+    <p>Learning through structured, accessible, and validated web content</p>
+  </header>
+
+  <main>
+
+    <!-- Section 1: Lists -->
+    <section>
+      <h2>Key Web Development Skills</h2>
+      <p>Here are essential skills for modern web developers:</p>
+      <ul>
+        <li>HTML5 Semantic Structure</li>
+        <li>CSS3 Styling and Layouts</li>
+        <li>Responsive Design (Mobile-First)</li>
+        <li>Accessibility (ARIA, Screen Readers)</li>
+        <li>Performance Optimization</li>
+      </ul>
+
+      <h3>Steps to Build a Web Page</h3>
+      <ol>
+        <li>Plan the layout and structure</li>
+        <li>Create the HTML skeleton</li>
+        <li>Add semantic content (headings, sections, etc.)</li>
+        <li>Style with CSS</li>
+        <li>Test for accessibility and responsiveness</li>
+      </ol>
+    </section>
+
+    <!-- Section 2: Table -->
+    <section>
+      <h2>Popular HTML5 Input Types</h2>
+      <table border="1" cellspacing="0" cellpadding="8">
+        <thead>
+          <tr>
+            <th>Input Type</th>
+            <th>Description</th>
+            <th>Use Case</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>text</code></td>
+            <td>Standard text input</td>
+            <td>User names, titles</td>
+          </tr>
+          <tr>
+            <td><code>email</code></td>
+            <td>Email format validation</td>
+            <td>Contact forms</td>
+          </tr>
+          <tr>
+            <td><code>number</code></td>
+            <td>Numeric input only</td>
+            <td>Age, quantity</td>
+          </tr>
+          <tr>
+            <td><code>date</code></td>
+            <td>Date picker</td>
+            <td>Birthday, deadlines</td>
+          </tr>
+          <tr>
+            <td><code>url</code></td>
+            <td>Validates web addresses</td>
+            <td>Portfolio links</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Section 3: Media -->
+    <section>
+      <h2>Embedded Media</h2>
+      <p>This section shows how to embed different media types in HTML5.</p>
+
+      <h3>Image Example</h3>
+      <img src="https://via.placeholder.com/800x400?text=HTML5+Learning" alt="Placeholder image representing HTML5 learning resources">
+
+      <h3>Video Example</h3>
+      <video controls width="600">
+        <source src="https://www.youtube.com/watch?v=dQw4w9WgXcQ" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <h3>Audio Example</h3>
+      <audio controls>
+        <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <!-- Section 4: HTML5 Form -->
+    <section>
+      <h2>User Registration Form</h2>
+      <p>Please fill out the form below to register. All fields are required unless marked optional.</p>
+
+      <form action="#" method="post" novalidate>
+
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <p>
+            <label for="fullName">Full Name *</label><br />
+            <input 
+              type="text" 
+              id="fullName" 
+              name="fullName" 
+              placeholder="Enter your full name" 
+              required 
+              minlength="2"
+              autocomplete="name" />
+          </p>
+
+          <p>
+            <label for="email">Email Address *</label><br />
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              placeholder="you@example.com" 
+              required 
+              autocomplete="email" />
+          </p>
+
+          <p>
+            <label for="phone">Phone Number</label><br />
+            <input 
+              type="tel" 
+              id="phone" 
+              name="phone" 
+              placeholder="(555) 123-4567" 
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}|$$[0-9]{3}$$ [0-9]{3}-[0-9]{4}"
+              autocomplete="tel" />
+            <small>Format: (123) 456-7890 or 123-456-7890</small>
+          </p>
+
+          <p>
+            <label for="dob">Date of Birth *</label><br />
+            <input 
+              type="date" 
+              id="dob" 
+              name="dob" 
+              required 
+              min="1900-01-01" 
+              max="2010-12-31" />
+          </p>
+
+          <p>
+            <label for="gender">Gender</label><br />
+            <select id="gender" name="gender" autocomplete="sex">
+              <option value="">-- Select One --</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+              <option value="prefer-not-to-say">Prefer not to say</option>
+            </select>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Account & Preferences</legend>
+
+          <p>
+            <label for="username">Username *</label><br />
+            <input 
+              type="text" 
+              id="username" 
+              name="username" 
+              placeholder="Choose a username" 
+              required 
+              minlength="5" 
+              pattern="[a-zA-Z0-9_]{5,}"
+              autocomplete="username" />
+            <small>At least 5 characters, letters, numbers, or underscores only.</small>
+          </p>
+
+          <p>
+            <label for="password">Password *</label><br />
+            <input 
+              type="password" 
+              id="password" 
+              name="password" 
+              placeholder="Create a strong password" 
+              required 
+              minlength="8"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              autocomplete="new-password" />
+            <small>Min 8 characters, including uppercase, lowercase, and a number.</small>
+          </p>
+
+          <p>
+            <label for="confirmPassword">Confirm Password *</label><br />
+            <input 
+              type="password" 
+              id="confirmPassword" 
+              name="confirmPassword" 
+              placeholder="Re-enter your password" 
+              required 
+              autocomplete="new-password" />
+          </p>
+
+          <p>
+            <label for="website">Personal Website (Optional)</label><br />
+            <input 
+              type="url" 
+              id="website" 
+              name="website" 
+              placeholder="https://yourwebsite.com" 
+              autocomplete="url" />
+          </p>
+
+          <p>
+            <label for="bio">Short Bio</label><br />
+            <textarea 
+              id="bio" 
+              name="bio" 
+              rows="4" 
+              placeholder="Tell us about yourself..." 
+              maxlength="300"></textarea><br />
+            <small>Max 300 characters.</small>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Agreement & Submission</legend>
+
+          <p>
+            <input 
+              type="checkbox" 
+              id="terms" 
+              name="terms" 
+              value="accepted" 
+              required />
+            <label for="terms">I agree to the <a href="#" target="_blank">Terms and Conditions</a> *</label>
+          </p>
+
+          <p>
+            <input 
+              type="checkbox" 
+              id="newsletter" 
+              name="newsletter" 
+              value="subscribed" 
+              checked />
+            <label for="newsletter">Subscribe to our newsletter (optional)</label>
+          </p>
+
+          <p>
+            <label for="captcha">CAPTCHA (for demo purposes)</label><br />
+            <input 
+              type="text" 
+              id="captcha" 
+              name="captcha" 
+              value="ABC123" 
+              readonly />
+          </p>
+
+          <p>
+            <button type="submit">Register Now</button>
+          </p>
+        </fieldset>
+
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 HTML5 Learning Platform. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
