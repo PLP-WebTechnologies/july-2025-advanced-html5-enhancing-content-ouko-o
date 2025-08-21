@@ -36,6 +36,58 @@ Submit a single HTML file named `enhanced-form.html`. It should include:
 
 * Proper and meaningful use of lists, tables, and media.
 * Clarity and accessibility of form structure.
+
+* # Advanced HTML5: Enhancing Content & Mastering Forms
+
+This project demonstrates core HTML5 concepts including semantic structure, content organization with lists and tables, embedded media, and a fully validated user registration form — all built using **pure HTML5** without any CSS or JavaScript.
+
+## 🎯 Assignment Overview
+
+This assignment focuses on:
+- Using **semantic HTML5 elements** (`<header>`, `<main>`, `<section>`, `<footer>`, etc.)
+- Organizing content with **lists and tables**
+- Embedding **images, audio, and video** using native HTML5 tags
+- Building a structured, accessible, and **client-side validated form**
+- Applying HTML5 form attributes like `required`, `placeholder`, `autocomplete`, `readonly`, `minlength`, `pattern`, and more
+- Ensuring accessibility and usability without relying on JavaScript or external libraries
+
+## 📁 Files Included
+
+- `enhanced-form.html` – The main HTML file containing all content and the registration form.
+
+## 🧩 Features Implemented
+
+### ✅ Semantic Structure
+- Clear document layout using semantic tags for better accessibility and SEO.
+
+### ✅ Lists & Tables
+- Ordered and unordered lists to present steps and skills.
+- Table showing HTML5 input types and their uses.
+
+### ✅ Media Embedding
+- `<img>` for images
+- `<video>` and `<audio>` with fallback messages for unsupported formats
+
+### ✅ Advanced Form
+- Multiple input types: text, email, password, tel, date, url, checkbox, select, textarea
+- Proper labeling and fieldsets for accessibility
+- Native HTML5 validation:
+  - `required` fields
+  - `minlength`, `pattern`, `min`/`max` dates
+  - Email and URL format validation
+  - Password strength rules via regex pattern
+  - Confirmation password match (visual only, no JS)
+
+### ❌ No External Dependencies
+- No CSS styling
+- No JavaScript
+- Pure HTML5 implementation
+
+## 🚀 How to View the Page
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/PLP-WebTechnologies/july-2025-advanced-html5-enhancing-content-ouko-o.git
 * Correct use of form elements and attributes.
 * Effective application of native HTML5 validation.
 * Clean, well-indented, and maintainable HTML code.
